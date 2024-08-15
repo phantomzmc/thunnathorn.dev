@@ -19,11 +19,11 @@
     color-scheme: dark;
     --theme-bg: #1d1d1d;
     --theme-text: #ededed;
-    --theme-accent: #93e1d4;
+    --theme-accent: #ff5353;
     --theme-accent-2: #545454;
     --theme-surface: #2f2f2f;
-    --theme-quote: #93e1d4;
-    --theme-highlight: #93e1d4;
+    --theme-quote: #ff5353;
+    --theme-highlight: #ff5353;
   }
 
   html {
@@ -50,15 +50,22 @@
     font-weight: 700;
   }
 
-  .prose-cody :where(code):not(:where([class~=not-prose],[class~=not-prose] *)) {
+  .prose-cody
+    :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
     @apply bg-accent !text-surface px-1 py-0;
   }
 
-  .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::before{
+  .prose
+    :where(code):not(
+      :where([class~="not-prose"], [class~="not-prose"] *)
+    )::before {
     content: none !important;
   }
 
-  .prose :where(code):not(:where([class~="not-prose"],[class~="not-prose"] *))::after{
+  .prose
+    :where(code):not(
+      :where([class~="not-prose"], [class~="not-prose"] *)
+    )::after {
     content: none !important;
   }
 
@@ -160,7 +167,7 @@
   }
 
   .title:before {
-    content: "#";
+    content: ">";
     @apply mr-2 text-accent-2;
   }
 
@@ -183,7 +190,7 @@
   .fade-in {
     @apply transition-opacity duration-700 ease-in opacity-100 duration-700;
   }
-  
+
   .fade-out {
     @apply transition-opacity duration-700 ease-in opacity-0 duration-700;
   }
