@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import { siteConfig, NAV_LINKS } from '../consts';
 import ThemeToggle from '../components/ThemeToggle.astro';
+import TextTyped from './TextTyped';
 
 const url = new URL(Astro.request.url);
 ---
@@ -9,9 +10,9 @@ const url = new URL(Astro.request.url);
 <header class="group relative mb-8 flex justify-between items-center gap-4" id="main-header">
 	<div class="block">
 		<a
-			class="title whitespace-nowrap" 
-			href="/"
-			aria-current={url.pathname === "/" ? "page" : false}
+		class="title whitespace-nowrap" 
+		href="/"
+		aria-current={url.pathname === "/" ? "page" : false}
 		>{siteConfig.title}</a>
 	</div>
 

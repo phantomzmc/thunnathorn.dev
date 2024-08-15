@@ -8,24 +8,24 @@ type Config = {
   profile: {
     author: string;
     description?: string;
-  }
-}
+  };
+};
 
 type SocialLink = {
   icon: string;
   friendlyName: string; // for accessibility
   link: string;
-}
+};
 
 export const siteConfig: Config = {
-  title: "Astro Theme Cody",
+  title: "thunnathorn.dev",
   description: "",
-  lang: "en-GB",
+  lang: "en-EN",
   profile: {
-    author: "Amy Dang",
-    description: "your bio description"
-  }
-}
+    author: "Thunnathorn Yuwasin",
+    description: "Senior Software Engineer at Deftdev Tech",
+  },
+};
 
 /** 
   These are you social media links. 
@@ -36,26 +36,21 @@ export const socialLinks: Array<SocialLink> = [
   {
     icon: "mdi:github",
     friendlyName: "Github",
-    link: "https://github.com/kirontoo/astro-theme-cody",
+    link: "https://github.com/phantomzmc",
   },
   {
     icon: "mdi:linkedin",
     friendlyName: "LinkedIn",
-    link: "#",
+    link: "https://www.linkedin.com/in/thannathorn-yuwasin-3437061a1/",
   },
   {
     icon: "mdi:email",
     friendlyName: "email",
-    link: "mailto:ndangamy@gmail.com",
+    link: "mailto:sirkiiky@gmail.com",
   },
-  {
-    icon: "mdi:rss",
-    friendlyName: "rss",
-    link: "/rss.xml"
-  }
 ];
 
-export const NAV_LINKS: Array<{ title: string, path: string }> = [
+export const NAV_LINKS: Array<{ title: string; path: string }> = [
   {
     title: "Home",
     path: "/",
@@ -70,10 +65,10 @@ export const NAV_LINKS: Array<{ title: string, path: string }> = [
   },
   {
     title: "Projects",
-    path: '/projects'
+    path: "/projects",
   },
-  {
-    title: "Archive",
-    path: '/archive'
-  }
+  // {
+  //   title: "Archive",
+  //   path: "/archive",
+  // },
 ];
