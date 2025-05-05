@@ -2,7 +2,8 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro';
-import { siteConfig } from "../consts.ts";
+import { siteConfig } from "../consts";
+import BuyMeACoffee from '@/components/BuyMeACoffee';
 
 interface Props {
 		title?: string;
@@ -17,6 +18,18 @@ const { title = "", description = siteConfig.description, image } = Astro.props;
 <html lang="en" class="dark">
 	<head>
 		<BaseHead title={title} description={description} image={image} />
+		<script
+			data-name="BMC-Widget"
+			data-cfasync="false"
+			src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+			data-id="phantomzmc"
+			data-description="Support me on Buy me a coffee!"
+			data-message="Thank you for visiting!"
+			data-color="#FFDD00"
+			data-position="Right"
+			data-x_margin="40"
+			data-y_margin="40"
+  		/>
 	</head>
 	<body>
 		<Header/>
@@ -25,6 +38,7 @@ const { title = "", description = siteConfig.description, image } = Astro.props;
 				<slot/>
 			</section>
 		</main>
+		<!-- <BuyMeACoffee /> -->
 		<Footer/>
 	</body>
 </html
