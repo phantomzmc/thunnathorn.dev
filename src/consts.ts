@@ -23,7 +23,7 @@ export const siteConfig: Config = {
   lang: "en-EN",
   profile: {
     author: "Thunnathorn Yuwasin",
-    description: "Senior Software Engineer at Deftdev Tech",
+    description: "Software Engineer at NocNoc",
   },
 };
 
