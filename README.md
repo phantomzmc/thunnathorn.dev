@@ -90,7 +90,7 @@ All commands are run from the root of the project, from a terminal:
 ## Configure
 
 ### Site Config, Social Media Links and Navbar Links
-Your site config, social media links and Navbar links are all placed within [`src/consts.ts`](https://github.com/kirontoo/astro-theme-cody/blob/main/src/consts.ts).
+Your site config, social media links and Navbar links are all placed within [`src/consts`](https://github.com/kirontoo/astro-theme-cody/blob/main/src/consts).
 There you can configure your site default title, description, language, profile, social media links and visible nav bar links.
 
 ### Adding Posts and Projects
