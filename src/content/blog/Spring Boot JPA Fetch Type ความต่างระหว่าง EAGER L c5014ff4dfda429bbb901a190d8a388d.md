@@ -7,7 +7,7 @@ heroImage:
   alt: 'blog placeholder'
 tags: ["tech", "java", "springboot"]
 updatedDate: 'Aug 14 2024'
-order: 1
+order: 2
 series: "knowledge"
 ---
 
